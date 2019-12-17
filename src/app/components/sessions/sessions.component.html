@@ -1,0 +1,30 @@
+<h1>
+  Sessions UI
+</h1>
+<div class="container">
+  <a id="speakers" routerLink="/speakers">
+    <input type="button" value="Go to Speakers" />
+  </a>
+  <br>
+  <a id="home" routerLink="/home">
+    <input type="button" value="Go to Home" />
+  </a>
+</div>
+<br>
+<div class="container" >
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Length</th>
+    </tr>
+    <tr *ngFor="let session of sessions">
+      <td>{{session.session_name}}</td>
+      <td>{{session.session_description}}</td>
+      <td>{{session.session_length}}</td>
+    </tr>
+  </table>
+</div>
+
+
+
