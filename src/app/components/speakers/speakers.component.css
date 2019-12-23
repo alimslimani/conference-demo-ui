@@ -1,0 +1,21 @@
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #2F465D;
+  background-color: lavender;
+  text-align: center;
+}
+h1 {
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+#home{
+  position: static;
+}
+
+#sessions{
+  position: relative;
+  top: 20px;
+  left: 150px;
+}

@@ -1,0 +1,32 @@
+<h1>
+  Speakers UI
+</h1>
+<div class="container">
+  <a id="sessions" routerLink="/sessions">
+    <input type="button" value="Go to Sessions" />
+  </a>
+  <br>
+  <a id="home" routerLink="/home">
+    <input type="button" value="Go to Home" />
+  </a>
+</div>
+<br>
+<div class="container">
+
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Title</th>
+      <th>company</th>
+      <th>Bio</th>
+    </tr>
+    <tr *ngFor="let speaker of speakers">
+      <td>{{speaker.first_name}}</td>
+      <td>{{speaker.last_name}}</td>
+      <td>{{speaker.title}}</td>
+      <td>{{speaker.company}}</td>
+      <td>{{speaker.bio}}</td>
+    </tr>
+  </table>
+</div>
