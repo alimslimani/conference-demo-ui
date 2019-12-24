@@ -10,6 +10,6 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   getHome() {
-    return this.http.get('/server/');
+    return this.http.get('/');
   }
 }

@@ -7,7 +7,7 @@ import { SpeakersComponent } from './components/speakers/speakers.component';
 
 const routes: Routes = [
   {
-    path: 'home', component: HomeComponent
+    path: '', component: HomeComponent
   },
   {
     path: 'sessions', component: SessionsComponent
