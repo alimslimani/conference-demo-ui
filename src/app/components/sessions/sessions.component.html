@@ -11,20 +11,23 @@
   </a>
 </div>
 <br>
-<div class="container" >
+<div class="container">
   <table class="table table-bordered table-inverse">
     <tr>
       <th>Name</th>
       <th>Description</th>
       <th>Length</th>
+      <th>Speaker Info</th>
     </tr>
     <tr *ngFor="let session of sessions">
       <td>{{session.session_name}}</td>
       <td>{{session.session_description}}</td>
       <td>{{session.session_length}}</td>
+      <ul class="speaker-list">
+        <li id="speakerList" *ngFor="let speaker of session.speakers">{{speaker.first_name}} {{speaker.last_name}}</li>
+        <li id="speakerList" *ngFor="let speaker of session.speakers">{{speaker.title}}</li>
+        <li id="speakerList" *ngFor="let speaker of session.speakers">{{speaker.company}}</li>
+      </ul>
     </tr>
   </table>
 </div>
-
-
-
